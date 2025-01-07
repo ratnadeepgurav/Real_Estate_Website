@@ -32,7 +32,7 @@ This static website is built using:
 
 1. Clone the repository:  
    ```bash  
-   git clone **https://github.com/ratnadeepgurav/Real_Estate_Website.git**
+   git clone https://github.com/ratnadeepgurav/Real_Estate_Website.git
 
 2. Navigate to the project directory:
 
