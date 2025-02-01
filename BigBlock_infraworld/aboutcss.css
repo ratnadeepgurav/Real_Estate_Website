@@ -1,0 +1,243 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/********** HEADER *********/
+.header{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0%;
+    background-color: #072e33;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50% ;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: rgb(11, 204, 230);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.header img
+{
+    width: 100px;
+    height: 70px;
+}
+
+.navbar a{
+    
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop 04s ease forwards;
+}
+.navbar a:hover{
+    color: #0ef ;
+}
+
+/*******************************************************************************************/
+
+
+
+/******** HEADER INFO ********/
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+.container h1
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* DIV class"p" */
+.p
+{
+    margin: 20px auto;  
+    text-align: center;
+    max-width: 90%;
+    font-style: italic;
+}
+
+/*******************************************************************************************/
+
+
+
+/* PHOTOS AND CERTIFICATE INFO */
+.home1
+ {
+ 
+     
+     display: flex;
+     align-items: center;
+     padding: 10px 5% 0;
+ }
+.cert
+{
+    
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s ;
+    padding-top: 10%;
+    opacity: 0;
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 150%;
+    margin: 20px auto;  
+    text-align: center;
+    max-width: 90%;
+    font-style: italic;
+
+}
+.h1 img
+{
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0s ;
+    padding-left: 30%;
+
+}
+.certificate
+{
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    margin-right: 5%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*******************************************************************************************/
+
+
+
+/* FOOTER */
+.info
+{
+    background: linear-gradient(80deg, #072e33 50%, #072e33 50%);
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-size-adjust: auto;
+    justify-content: space-between;
+    padding-left: 5%;
+    display: flex;
+}
+.fa
+{
+   color: rgb(172, 143, 15);
+}
+
+.web a:-webkit-any-link
+{
+    color: #157ed4;
+}
+
+.foot
+{
+    padding-left: 1%;
+    
+}
+
+.foot a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:  2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s ease  ;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+    
+}
+.foot a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* All QR-code */
+.qr
+{
+    padding-top: 1%;
+}
+
+/*******************************************************************************************/
+
+
+/****************** ANIMATIONS *************/
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+/*******************************************************************************************/

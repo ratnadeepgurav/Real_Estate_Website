@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="careers.css">
+    <!-- <link rel="stylesheet" type="text/css" href="careers.js"> -->
+    <link rel="website icon" href="BBI_Background1_home.jpg" type="jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        let slideIndex = 1;
+
+        function moveSlide(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function showSlides(n) {
+            let slides = $(".slide");
+            if (n > slides.length) 
+            {
+                slideIndex = 1;
+            }
+            if (n < 1) 
+            {
+                slideIndex = slides.length;
+            }
+            slides.hide();
+            slides.eq(slideIndex - 1).show();
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <a href="index.html" class="logo">  <img src="Logo.png" alt="logo"></a>
+            
+            <nav class="navbar">
+                <a href="index.html" style="--i:1" >Home</a>
+                <a href="about.html"style="--i:2">About Us</a>
+                <a href="happy.html"style="--i:4">Our Happy Clients</a>
+                <a href="careers.html"style="--i:3" class="active">Careers</a>
+                <a href="#"style="--i:5">Contact</a>
+            </nav>
+        </header>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="Happy_img/img1.jpg" alt="Slide 1" width="90%">
+                </div>
+                <div class="slide">
+                    <img src="Happy_img/img2.jpg" alt="Slide 2" width="90%">
+                </div>
+                <div class="slide">
+                    <img src="Happy_img/img3.jpeg" alt="Slide 3" width="90%">
+                </div>
+                <!-- Add more slide elements as needed -->
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+    
+
+
+</body>
